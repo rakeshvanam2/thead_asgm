@@ -1,0 +1,331 @@
+/* Header.css */
+.header {
+  width: 100%;
+  height: 10%;
+}
+
+.logo img {
+  width: 100%;
+  /* Adjust the size as needed */
+}
+
+.header-text {
+  flex: 1;
+  padding: 0 20px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  margin-top: -250px;
+}
+
+.header-text h1 {
+  font-size: 24px;
+  margin: 10px;
+}
+.header-text p {
+  color: gray;
+  margin: 10px;
+  padding-left: 300px;
+  padding-right: 250px;
+}
+.header-button {
+  background-color: rgb(28, 28, 80); /* Adjust button style */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.header-button:hover {
+  background-color: #0056b3; /* Adjust hover color */
+}
+.calander_header {
+  display: flex;
+  margin-top: 50px;
+}
+.heading {
+  margin-right: 30px;
+  padding-left: 200px;
+  margin-top: 100px;
+  font-family: initial;
+}
+.vl {
+  position: relative;
+  border-left: 3px solid rgb(138, 145, 138);
+  margin-top: 100px;
+}
+
+.heading h1 {
+  margin-bottom: 20px;
+  color: rgb(28, 28, 80);
+}
+.heading p {
+  margin-bottom: 20px;
+  color: rgb(129, 118, 118);
+}
+
+.calander_l1 {
+  display: flex;
+  margin-right: 30px;
+  padding-left: 50px;
+  margin-top: 100px;
+  font-family: initial;
+}
+.calander_l1 h3 {
+  margin-bottom: 10px;
+}
+.calander_l1 h5 {
+  margin-bottom: 20px;
+  color: rgb(129, 118, 118);
+}
+.calander_l2 {
+  display: flex;
+  margin-right: 30px;
+  padding-left: 50px;
+  margin-top: 100px;
+  font-family: initial;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  color: rgb(28, 28, 80);
+  margin-right: 10px;
+}
+.calander_l2 h3 {
+  margin-bottom: 10px;
+}
+.calander_l2 h5 {
+  margin-bottom: 5px;
+  color: rgb(129, 118, 118);
+}
+.calander_l2 p {
+  margin-bottom: 5px;
+  color: rgb(129, 118, 118);
+  font-size: small;
+}
+
+.calander_l3 {
+  display: flex;
+  margin-right: 30px;
+  padding-left: 50px;
+  margin-top: 100px;
+  font-family: initial;
+}
+.calander_l3 h3 {
+  margin-bottom: 10px;
+}
+.calander_l3 h5 {
+  margin-bottom: 20px;
+  color: rgb(129, 118, 118);
+}
+.text_boxs {
+  display: flex;
+}
+.box {
+  background-color: rgb(28, 28, 80);
+  margin-top: 50px;
+  border-radius: 20px;
+  margin-left: 30px;
+  color: white;
+  padding: 30px;
+}
+.box h5 {
+  padding-bottom: 30px;
+}
+.box p {
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box_icon {
+  background-color: rgb(28, 28, 80); /* Adjust button style */
+  color: white;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: small;
+  font-weight: bold;
+}
+.icon1 {
+  background-color: white;
+  color: rgb(28, 28, 80);
+  border-radius: 50%;
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0;
+}
+.icon1:hover {
+  background-color: blueviolet;
+}
+.content {
+  display: flex;
+}
+.content_text {
+  margin-top: 100px;
+  padding: 30px;
+  background-color: rgb(194, 181, 181);
+}
+.content_text h1 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 50px;
+}
+.content_text h4 {
+  padding-bottom: 10px;
+}
+.faq_header {
+  text-align: center;
+  margin: 20px;
+  color: rgb(28, 28, 80);
+  padding: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.faq_content {
+  display: flex;
+}
+
+.faq_button p {
+  margin-left: 50px;
+  padding-left: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(28, 28, 80);
+}
+.content_faq {
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+.faq_button button {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  color: rgb(28, 28, 80);
+}
+.sub_items {
+  margin-top: -330px;
+  color: white;
+}
+.sub_heading {
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  color: rgb(28, 28, 80);
+}
+.sub_p {
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  color: rgb(28, 28, 80);
+}
+/* SearchButton.css */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-button {
+  background-color: rgb(28, 28, 80); /* Adjust button style */
+  color: white;
+
+  font-size: small;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-right: 10px; /* Add margin for spacing */
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Adjust hover color */
+}
+
+.search-input {
+  width: 30%;
+  margin-right: 20px;
+  margin-left: 100px;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: black;
+  color: black;
+  background-color: white;
+}
+.sub_icon {
+  margin-left: 15px;
+}
+.footer_img {
+  width: 100%;
+  height: 250px;
+  margin-top: 30px;
+}
+.footer_items {
+  display: flex;
+  margin-top: -200px;
+  margin-left: 175px;
+  color: white;
+}
+.footer_contact {
+  margin-right: 250px;
+}
+.footer_contact h3 {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+.footer_contact p {
+  font-family: sans-serif;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+.footer_follow {
+  margin-right: 250px;
+}
+
+.footer_follow h3 {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+.social-container {
+  display: flex;
+  margin-left: -80px;
+}
+.youtube_social {
+  padding-right: 25px;
+  color: white;
+}
+.facebook_social {
+  padding-right: 25px;
+  color: white;
+}
+.instagram_social {
+  padding-right: 25px;
+  color: white;
+}
+.twitter_social {
+  padding-right: 25px;
+  color: white;
+}
+.footer_office h3 {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+.footer_office p {
+  font-family: sans-serif;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+.end_footer {
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  background-color: rgba(8, 115, 192, 0.904);
+  text-align: center;
+}

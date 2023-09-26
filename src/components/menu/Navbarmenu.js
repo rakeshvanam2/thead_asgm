@@ -1,0 +1,172 @@
+import React, { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+import { FiAlignRight, FiXCircle, FiChevronDown } from "react-icons/fi";
+
+import Search from "./Search";
+
+const Navbarmenu = () => {
+  const [isMenu, setisMenu] = useState(false);
+  const [isResponsiveclose, setResponsiveclose] = useState(false);
+  const toggleClass = () => {
+    setisMenu(isMenu === false ? true : false);
+    setResponsiveclose(isResponsiveclose === false ? true : false);
+  };
+
+  let boxClass = ["main-menu menu-right menuq1"];
+  if (isMenu) {
+    boxClass.push("menuq2");
+  } else {
+    boxClass.push("");
+  }
+
+  const [isMenuSubMenu, setMenuSubMenu] = useState(false);
+
+  const toggleSubmenu = () => {
+    setMenuSubMenu(isMenuSubMenu === false ? true : false);
+  };
+
+  let boxClassSubMenu = ["sub__menus"];
+  if (isMenuSubMenu) {
+    boxClassSubMenu.push("sub__menus__Active");
+  } else {
+    boxClassSubMenu.push("");
+  }
+
+  return (
+    <header className="header__middle">
+      <div className="container">
+        <div className="row">
+          {/* Add Logo  */}
+          <div className="header__middle__logo">
+            <NavLink exact activeClassName="is-active" to="/">
+              <h1 className="logo">LOGO</h1>
+            </NavLink>
+          </div>
+
+          <div className="header__middle__menus">
+            <nav className="main-nav ">
+              {/* Responsive Menu Button */}
+              {isResponsiveclose === true ? (
+                <>
+                  <span
+                    className="menubar__button"
+                    style={{ display: "none" }}
+                    onClick={toggleClass}
+                  >
+                    {" "}
+                    <FiXCircle />{" "}
+                  </span>
+                </>
+              ) : (
+                <>
+                  <span
+                    className="menubar__button"
+                    style={{ display: "none" }}
+                    onClick={toggleClass}
+                  >
+                    {" "}
+                    <FiAlignRight />{" "}
+                  </span>
+                </>
+              )}
+
+              <ul className={boxClass.join(" ")}>
+                <li
+                  onClick={toggleSubmenu}
+                  className="menu-item sub__menus__arrows"
+                >
+                  {" "}
+                  <Link to="#">
+                    Qualification <FiChevronDown />{" "}
+                  </Link>
+                  <ul className={boxClassSubMenu.join(" ")}>
+                    <li>
+                      {" "}
+                      <NavLink
+                        onClick={toggleClass}
+                        activeClassName="is-active"
+                        to={`/Btech`}
+                      >
+                        Btech{" "}
+                      </NavLink>{" "}
+                    </li>
+                    <li>
+                      <NavLink
+                        onClick={toggleClass}
+                        activeClassName="is-active"
+                        to={`/Diploma`}
+                      >
+                        {" "}
+                        Diploma{" "}
+                      </NavLink>{" "}
+                    </li>
+                  </ul>
+                </li>
+
+                <li className="menu-item ">
+                  <NavLink
+                    onClick={toggleClass}
+                    activeClassName="is-active"
+                    to={`/`}
+                  >
+                    {" "}
+                    Organization <FiChevronDown />
+                  </NavLink>{" "}
+                </li>
+                <li className="menu-item">
+                  <NavLink
+                    exact
+                    activeClassName="is-active"
+                    onClick={toggleClass}
+                    to={`/`}
+                  >
+                    Research & Analysis
+                    <FiChevronDown />{" "}
+                  </NavLink>
+                </li>
+                <li className="menu-item ">
+                  <NavLink
+                    onClick={toggleClass}
+                    activeClassName="is-active"
+                    to={`/`}
+                  >
+                    {" "}
+                    Lorem Ipsum <FiChevronDown />
+                  </NavLink>{" "}
+                </li>
+                <li className="menu-item ">
+                  <NavLink
+                    onClick={toggleClass}
+                    activeClassName="is-active"
+                    to={`/`}
+                  >
+                    {" "}
+                    Lorem Ipsum <FiChevronDown />
+                  </NavLink>{" "}
+                </li>
+                <li className="menu-item">
+                  {" "}
+                  <span className="ml-auto align-items-end px-3">
+                    <Search />
+                  </span>{" "}
+                </li>
+                <li className="menu-item ">
+                  <NavLink
+                    onClick={toggleClass}
+                    activeClassName="is-active"
+                    to={`/`}
+                  >
+                    {" "}
+                    <button className="button"> Enrolment</button>
+                  </NavLink>{" "}
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Navbarmenu;

@@ -1,0 +1,94 @@
+.searchbar {
+  max-width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  margin-top: 30px;
+}
+
+.fadeInWidth {
+  animation: 0.2s linear fadeInWidth;
+}
+
+.fadeOutWidth {
+  animation: 0.2s linear fadeOutWidth;
+}
+
+.fadeIn {
+  animation: 0.8s linear fadeIn;
+}
+.fadeOut {
+  animation: 1s linear fadeOut;
+}
+
+.search-input {
+  background-color: beige;
+  color: white;
+  border-color: white;
+  background: none;
+  padding: 0px 15px;
+  transition: width 0.4s linear;
+  caret-color: rgb(237, 247, 246);
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+.search-icon {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+}
+.icon-bg:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@keyframes fadeInWidth {
+  0% {
+    width: 30px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+@keyframes fadeOutWidth {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 30px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
