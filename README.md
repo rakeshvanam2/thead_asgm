@@ -1,2 +1,4 @@
 # thead_asgm
-Created with CodeSandbox
+# React js
+# Icons/fa
+# css
