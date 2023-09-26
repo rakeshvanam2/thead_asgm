@@ -24,11 +24,13 @@
 }
 
 .search-input {
-  background-color: beige;
-  color: white;
-  border-color: white;
-  background: none;
-  padding: 0px 15px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: rgb(32, 28, 28);
+  color: rgb(25, 23, 23);
+  background-color: white;
   transition: width 0.4s linear;
   caret-color: rgb(237, 247, 246);
   animation-name: fadeIn;
