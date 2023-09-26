@@ -246,16 +246,16 @@
   background-color: #0056b3; /* Adjust hover color */
 }
 
-.search-input {
-  width: 30%;
+.search-input1 {
+ width: 30%;
   margin-right: 20px;
   margin-left: 100px;
   padding: 15px;
   border: 1px solid black;
   border-radius: 5px;
   font-size: 16px;
-  box-shadow: black;
-  color: black;
+  box-shadow: rgb(32, 28, 28);
+  color: rgb(252, 249, 249);
   background-color: white;
 }
 .sub_icon {
