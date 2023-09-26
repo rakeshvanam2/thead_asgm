@@ -264,7 +264,7 @@ function Header() {
           <input
             type="text"
             placeholder="Enter Your Email Address"
-            className="search-input"
+            className="search-input1"
           />
           <button className="search-button">
             Subscribe Now
