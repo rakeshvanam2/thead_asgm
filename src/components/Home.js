@@ -329,10 +329,11 @@ function Header() {
             <p>Lorem ipsum asd asdsaweeq Lorem ipsum</p>
           </div>
         </div>
-        <div class="end_footer">
-          <p>@ 2023 All Rights Reserved. Privacy Policy</p>
-        </div>
+       
       </footer>
+       <sectionclass="end_footer">
+          <p>@ 2023 All Rights Reserved. Privacy Policy</p>
+        </section>          
     </div>
   );
 }
